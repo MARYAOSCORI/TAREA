@@ -82,10 +82,10 @@
 
 			// Layer WMS desde geoserver Local
 			var layerPGMF = new OpenLayers.Layer.WMS(
-				"Planes de Manejo Forestal",
+				"Línea minibuses",
 				hostGeoserver+ ":8080/geoserver/wms",
 				{
-					layers: 'cursosigLPV:B0603201_PGMF_A2016',
+					layers: 'tareadatos:lineas_minibuseswgs84',
 					transparent: true
 				}
 			);
@@ -94,10 +94,10 @@
 
 			// Planes Operativos Anuales Forestales WMS local 
 			var layerPOAF = new OpenLayers.Layer.WMS(
-				"Planes Operativos Anuales Forestales",
+				"Límite La Paz",
 				hostGeoserver+ ":8080/geoserver/wms",
 				{
-					layers: 'cursosigLPV:B0603205_POAF_2013A022017',
+					layers: 'tareadatos:LIMITE_LA_PAZ',
 					transparent: true
 				}
 			);
